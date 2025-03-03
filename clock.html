@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <h1>DATE</h1>
+    <main>
+        <div class="box one">
+            <div class="half ha1 hour">00</div>
+            <div class="half ha2 hour">00</div>
+        </div>
+        <div class="circle">
+            <div>:</div>
+        </div>
+        <div class="box one">
+            <div class="half ha1 minute">00</div>
+            <div class="half ha2 minute">00</div>
+        </div>
+
+        <div class="circle">
+            <div>:</div>
+        </div>
+        <div class="box one">
+            <div class="half ha1 sec">00</div>
+            <div class="half ha2 sec">00</div>
+        </div>        
+    </main>
+
+    <div class="dibba">
+    <div class="stopwatch">
+        <div id="stopwatch">00:00:00</div> <!-- stop watch -->
+        <button onclick="startStopwatch()" style="background-color: rgba(255, 140, 0, 0.538);">Start</button>
+        <button onclick="stopStopwatch()" style="background-color: rgba(241, 79, 79, 0.422);">Stop</button>
+        <button onclick="resetStopwatch()" style="background-color: rgba(255, 255, 255, 0.558);">Reset</button>
+    </div>
+    <div class="note">
+        <h2>To-Do List</h2><hr style="margin-bottom: 2.4px;"><hr>
+        <div class="intext">
+            <input type="text" id="add" placeholder="Add here" >
+            <button class="sub" onclick="getInputVal()">+</button>
+        </div>
+        <div class="notebook">
+        </div>
+    </div></div>
+    <footer>
+        <hr>
+        <p>random thought</p>
+    </footer>
+<script src="clock.js"></script>
+</body>
+</html>
